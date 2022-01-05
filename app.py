@@ -1,13 +1,11 @@
 from flask import Flask, redirect, request, Response, jsonify, send_file 
-import cv2
 #from flask.json import jsonify
 from werkzeug.wrappers import response
 import json
 import pymongo
 from flask_cors import CORS
 from flask_bcrypt import Bcrypt
-from bson import ObjectId
-from PIL import Image
+
 
 
 #mongo = pymongo.MongoClient(host="localhost", port=27017, serverSelectionTimeoutMS=100000)
