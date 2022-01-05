@@ -7,11 +7,11 @@ import pymongo
 from flask_cors import CORS
 from flask_bcrypt import Bcrypt
 from bson import ObjectId
-from PIL import Image
+
 
 
 #mongo = pymongo.MongoClient(host="localhost", port=27017, serverSelectionTimeoutMS=100000)
-mongo = pymongo.MongoClient("mongodb://aptcoder:wonderful.@cluster0.5gyf4.mongodb.net/swep-be?retryWrites=true")
+mongo = pymongo.MongoClient("mongodb+srv://aptcoder:wonderful.@cluster0.5gyf4.mongodb.net/swep-be?retryWrites=true")
 mongo.server_info()
 db = mongo.get_database("swep-be")
 user_check = db.stage_one_vps
