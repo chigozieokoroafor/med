@@ -36,7 +36,7 @@ def card():
             #return (json.dumps(stage_one), 200)
             if stage_one["status"]=="complete" :
 
-                message = {"Status":stage_one["status"], "Name":user["firstName"], "Registration Number":user["registrationNumber"], "health center id":user["health_center_id"], "passport":stage_one["passport"]}
+                message = {"Status":stage_one["status"], "Name":user["firstName"]+" "+user["lastName"], "Registration Number":user["registrationNumber"], "health center id":user["health_center_id"], "passport":stage_one["passport"]}
                 return json.dumps(message), 200
             else:
                 return Response(response=("status isn/'t complete"), status=401)
