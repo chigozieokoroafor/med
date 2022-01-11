@@ -17,7 +17,7 @@ user_info  = db.users
 
 
 app = Flask(__name__)
-CORS(app, resources={r"/": {"origin": "*"}})
+CORS(app)
 bcrypt = Bcrypt(app) 
 app.config["SECRET_KEY"] ="youcannotguessit"
 secret_key = "youcannotguessit"
